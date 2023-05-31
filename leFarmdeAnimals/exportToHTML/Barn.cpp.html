@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Barn.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bbb529;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+.s4 { color: #6897bb;}
+.s5 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Barn.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&lt;iostream&gt;</span>
+<span class="s0">#include </span><span class="s2">&lt;vector&gt;</span>
+<span class="s0">#include </span><span class="s2">&quot;Barn.h&quot;</span>
+<span class="s3">using namespace </span><span class="s1">std</span><span class="s3">;</span>
+
+
+<span class="s1">Barn :: Barn(){</span>
+<span class="s1">}</span>
+
+<span class="s3">void </span><span class="s1">Barn :: adoptChicken(</span><span class="s3">int </span><span class="s1">WT</span><span class="s3">, </span><span class="s1">string NM){</span>
+    <span class="s1">myPeeps.push_back(Chicken(WT</span><span class="s3">, </span><span class="s1">NM))</span><span class="s3">;</span>
+<span class="s1">}</span>
+<span class="s3">void </span><span class="s1">Barn :: adoptCow(</span><span class="s3">int </span><span class="s1">WT</span><span class="s3">, </span><span class="s1">string NM){</span>
+    <span class="s1">myCattle.push_back(Cow(WT</span><span class="s3">, </span><span class="s1">NM))</span><span class="s3">;</span>
+<span class="s1">}</span>
+<span class="s3">void </span><span class="s1">Barn :: adoptPig(</span><span class="s3">int </span><span class="s1">WT</span><span class="s3">, </span><span class="s1">string NM){</span>
+    <span class="s1">myPigs.push_back(Pig(WT</span><span class="s3">, </span><span class="s1">NM))</span><span class="s3">;</span>
+<span class="s1">}</span>
+<span class="s3">void </span><span class="s1">Barn :: feedChickens(){</span>
+    <span class="s3">for</span><span class="s1">(</span><span class="s3">int </span><span class="s1">i = </span><span class="s4">0</span><span class="s3">; </span><span class="s1">i &lt; myPeeps.size()</span><span class="s3">; </span><span class="s1">i++){</span>
+        <span class="s1">myPeeps[i].eat()</span><span class="s3">;</span>
+        <span class="s1">myPeeps[i].gainWeight(</span><span class="s4">1</span><span class="s1">)</span><span class="s3">; </span><span class="s5">// only adds 1 pound since chickens don't eat very much</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+<span class="s3">void </span><span class="s1">Barn :: feedCows() {</span>
+    <span class="s3">for </span><span class="s1">(</span><span class="s3">int </span><span class="s1">i = </span><span class="s4">0</span><span class="s3">; </span><span class="s1">i &lt; myCattle.size()</span><span class="s3">; </span><span class="s1">i++) {</span>
+        <span class="s1">myCattle[i].eat()</span><span class="s3">;</span>
+        <span class="s1">myCattle[i].gainWeight(</span><span class="s4">8</span><span class="s1">)</span><span class="s3">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+<span class="s3">void </span><span class="s1">Barn :: feedPigs() {</span>
+    <span class="s3">for </span><span class="s1">(</span><span class="s3">int </span><span class="s1">i = </span><span class="s4">0</span><span class="s3">; </span><span class="s1">i &lt; myPigs.size()</span><span class="s3">; </span><span class="s1">i++) {</span>
+        <span class="s1">myPigs[i].eat()</span><span class="s3">;</span>
+        <span class="s1">myPigs[i].gainWeight(</span><span class="s4">10</span><span class="s1">)</span><span class="s3">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>main.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #bbb529;}
+.s3 { color: #6a8759;}
+.s4 { color: #cc7832;}
+.s5 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">// Kolter Leisy 3-14-2023</span>
+<span class="s2">#include </span><span class="s3">&lt;iostream&gt;</span>
+<span class="s2">#include </span><span class="s3">&lt;vector&gt;</span>
+<span class="s2">#include </span><span class="s3">&quot;Barn.h&quot;</span>
+<span class="s4">using namespace </span><span class="s1">std</span><span class="s4">;</span>
+
+<span class="s4">int </span><span class="s1">main() {</span>
+    <span class="s1">Barn myBarn</span><span class="s4">;</span>
+    <span class="s1">myBarn.adoptChicken(</span><span class="s5">4</span><span class="s4">, </span><span class="s3">&quot;Benjamin&quot;</span><span class="s1">)</span><span class="s4">; </span><span class="s0">// adopt animals (add them to barn)</span>
+    <span class="s1">myBarn.adoptChicken(</span><span class="s5">3</span><span class="s4">, </span><span class="s3">&quot;Henrietta&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">myBarn.feedChickens()</span><span class="s4">; </span><span class="s0">// feed those animals</span>
+
+    <span class="s1">myBarn.adoptCow(</span><span class="s5">800</span><span class="s4">, </span><span class="s3">&quot;Molly&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">myBarn.adoptCow(</span><span class="s5">3000</span><span class="s4">, </span><span class="s3">&quot;Mr. Bean&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">myBarn.feedCows()</span><span class="s4">;</span>
+
+    <span class="s1">myBarn.adoptPig(</span><span class="s5">200</span><span class="s4">, </span><span class="s3">&quot;George&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">myBarn.adoptPig(</span><span class="s5">1500</span><span class="s4">, </span><span class="s3">&quot;Tiny Tim&quot;</span><span class="s1">)</span><span class="s4">;</span>
+    <span class="s1">myBarn.feedPigs()</span><span class="s4">;</span>
+
+    <span class="s4">return </span><span class="s5">0</span><span class="s4">;</span>
+<span class="s1">}</span>
+</pre>
+</body>
+</html>

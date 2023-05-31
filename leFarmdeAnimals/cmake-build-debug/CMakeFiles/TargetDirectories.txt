@@ -1,0 +1,3 @@
+/Users/kolterleisy/CLionProjects/leFarmdeAnimals/cmake-build-debug/CMakeFiles/leFarmdeAnimals.dir
+/Users/kolterleisy/CLionProjects/leFarmdeAnimals/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kolterleisy/CLionProjects/leFarmdeAnimals/cmake-build-debug/CMakeFiles/rebuild_cache.dir
